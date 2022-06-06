@@ -179,3 +179,9 @@ Change the `alias` to point to where those packages are actually installed. This
 ```
 
 An alternative to fixing this problem would be to remove aliases altogether and define the dependencies referenced as aliases as dev dependencies instead. [However, that might cause other problems.](https://github.com/palmerhq/tsdx/issues/64)
+
+## Contributing
+This UI kit is used for developing of React applications and anybody are free to use it. If you want to extend some features please respect all rules described in this section.
+
+## Commits
+For commits we agreed to use [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/) to automate changelog and release documentation. Yo preserve consistency of commit messages we use [commitlint](https://github.com/conventional-changelog/commitlint).
