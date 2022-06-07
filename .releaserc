@@ -1,18 +1,13 @@
 {
     "branches": [
-        "master",
+        { "name": "master" },
         {
-            "name": "next",
-            "prerelease": "beta",
-            "channel": "<%= 'beta' %>"
-        },
-        {
-            "name": "rc/[A-Za-z]+/[A-Za-z0-9+]+",
+            "name": "rc/[A-Z]+-[0-9]+/[A-Za-z0-9-]+",
             "prerelease": "<%= 'alpha' %>",
-            "channel": "alpha"
+            "channel": "<%= 'alpha' %>"
         },
         {
-            "name": "prerelease/[A-Za-z]+/[A-Za-z0-9+]+",
+            "name": "prerelease/[A-Z]+-[0-9]+/[A-Za-z0-9-]+",
             "prerelease": "<%= name.split('/')[1] %>",
             "channel": "<%= name.split('/')[1] %>"
         }
