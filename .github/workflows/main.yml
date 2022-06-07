@@ -16,20 +16,17 @@ jobs:
 
       - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v3
-        
         with:
           node-version: ${{ matrix.node }}
-          registry-url: https://npm.pkg.github.com
-          scope: '@drobenyuka'
 
       - name: Install deps and build (with cache)
-        uses: npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Lint
-        run: npm run lint
+        run: yarn lint
 
       - name: Test
-        run: npm run test test --ci --coverage --maxWorkers=2
+        run: yarn test --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: npm run build
+        run: yarn build
