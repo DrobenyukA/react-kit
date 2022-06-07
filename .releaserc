@@ -1,8 +1,8 @@
 {
     "branches": [
-        "master",
+        { "name": "master" },
         {
-            "name": "prerelease/[A-Za-z]+-[0-9]+/[A-Za-z0-9+]+",
+            "name": "prerelease/[A-Z]+-[0-9]+/[A-Za-z0-9-]+",
             "prerelease": "<%= name.split('/')[1] %>",
             "channel": "<%= name.split('/')[1] %>"
         }
