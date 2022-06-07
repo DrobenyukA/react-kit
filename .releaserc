@@ -3,7 +3,7 @@
         "master",
         {
             "name": "next",
-            "prerelease": "beta",
+            "prerelease": "<%= 'beta' %>",
             "channel": "<%= 'beta' %>"
         },
         {
