@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0-auto",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -27,7 +27,7 @@
     "react": ">=16"
   },
   "husky": {
-    "hooks": {
+    "hooks": { 
       "pre-commit": "tsdx lint"
     }
   },
@@ -37,7 +37,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-kit",
+  "name": "@drobenyuka/react-kit",
   "author": "Andriy Drobenyuk",
   "module": "dist/react-kit.esm.js",
   "size-limit": [
@@ -71,5 +71,9 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.3"
+  },
+  "repository": "git@github.com:DrobenyukA/react-kit.git",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }

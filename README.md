@@ -87,7 +87,7 @@ tsconfig.json
 
 #### React Testing Library
 
-We do not set up `react-testing-library` for you yet, we welcome contributions and documentation on this.
+To be done.
 
 ### Rollup
 
@@ -183,5 +183,29 @@ An alternative to fixing this problem would be to remove aliases altogether and 
 ## Contributing
 This UI kit is used for developing of React applications and anybody are free to use it. If you want to extend some features please respect all rules described in this section.
 
-## Commits
-For commits we agreed to use [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/) to automate changelog and release documentation. Yo preserve consistency of commit messages we use [commitlint](https://github.com/conventional-changelog/commitlint).
+### Branching policy
+There is a suggested branch naming for the repository. Please respect these naming conventions to keep consistency in the library repository.
+
+| Name pattern                    | Based on    |              Purpose                              | Release |
+|---------------------------------|-------------|---------------------------------------------------|---------|
+| master                          |             | Holds current version of library                  |   Yes   |
+| next                            | master      | Holds next stable version of library e.g. Beta    |   Yes   |
+| rc/{epic}/{description}         | next        | Holds next unstable version of library e.g. Alpha |   Yes   |
+| prerelease/{task}/{description} | next        | Holds specific features that needs to exposed     |   Yes   |
+| feature/{task}/{description}    | next        | Holds specific feature                            |   No    |
+| fix/{task}/{description}        | any         | Holds fix for some issues                         |   No    |
+| chore/{task}/{description}      | any         | Some other work that requires some place to stay  |   No    |
+
+Where:
+- `{epic}` - epic task identifier for example: EPIC-001
+- `{task}` - task identifier for example: TASK-001
+- `{description}` - short description of the task/epic
+### Commits
+For commits we agreed to use [conventional commit format](https://www.conventionalcommits.org/en/v1.0.0/) to automate changelog and release documentation. To preserve consistency of commit messages we use [commitlint](https://github.com/conventional-changelog/commitlint). All commits should respect suggested pattern:
+```
+<type>(<scope>): <message>. <TASK-ID>
+```
+For example:
+```
+feat(awesome-feature): short description of work that was done. TASK-001
+```
