@@ -2,7 +2,7 @@
     "branches": [
         { "name": "master" },
         {
-            "name": "rc/[A-Z]+-[0-9]+/[A-Za-z0-9-]+",
+            "name": "rc/[A-Za-z]+-[0-9]+/[A-Za-z0-9-]+",
             "prerelease": "<%= 'alpha' %>",
             "channel": "<%= 'alpha' %>"
         },
