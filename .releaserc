@@ -4,11 +4,11 @@
         {
             "name": "next",
             "prerelease": "beta",
-            "channel": "beta"
+            "channel": "<%= beta %>"
         },
         {
             "name": "rc/[A-Za-z]+/[A-Za-z0-9+]+",
-            "prerelease": "alpha",
+            "prerelease": "<%= alpha %>",
             "channel": "alpha"
         },
         {
